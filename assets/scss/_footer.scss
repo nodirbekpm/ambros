@@ -1,0 +1,38 @@
+.footer{
+    &_main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid #4DA7C9;
+        padding: 40px 0;
+    }
+    &_desc{
+        color: #0F161D;
+        font-family: "Montserrat";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+   &_menus{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    a{
+        color: #0F161D;
+        font-family: "Montserrat";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        transition: all .3s ease all;
+        &:hover{
+            opacity: .7;
+        }
+    }
+   }
+   &_icons{
+    display: flex;
+    align-items: center;
+   }
+}

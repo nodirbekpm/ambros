@@ -1,0 +1,66 @@
+.hero{
+    background: linear-gradient(180deg, #EAFAFF 0%, rgba(231, 230, 237, 0.00) 100%);
+    &_block{
+        position: relative;
+        padding: 170px 0 160px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1{
+            margin-bottom: 8px;
+
+            color: #0F161D;
+            text-align: center;
+            font-family: "Montserrat";
+            font-size: 80px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: -4.8px;
+            text-transform: uppercase;
+        }
+        h3{
+            margin-bottom: 40px;
+
+            color: #0F161D;
+            text-align: center;
+            font-family: "Montserrat";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+    &_bg{
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+        left: 0;
+        overflow: hidden;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            background-color: #F0F0F3;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+          }
+        video{
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* fon kabi qilsin */
+            object-position: center;
+            display: block;
+            outline: none;
+            background: none; 
+            clip-path: inset(0px);
+            backface-visibility: hidden;
+            &::-webkit-media-controls {
+                display: none !important;
+            }
+        }
+    }
+}

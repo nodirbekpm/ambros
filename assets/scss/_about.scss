@@ -1,0 +1,27 @@
+.about{
+    &_main{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        align-self: stretch;
+    }
+    &_card{
+        padding: 48px;
+        gap: 48px;
+        border-radius: 24px;
+        background: #FFF;
+    }
+    &_left{
+        display: flex;
+        flex-direction: column;
+        max-width: 455px;
+        width: 100%;
+    }
+    
+    h2{
+        margin-bottom: 24px;
+    }
+    p{
+        margin-bottom: 32px;
+    }
+}
