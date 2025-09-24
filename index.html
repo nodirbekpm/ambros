@@ -1049,7 +1049,7 @@
             <div class="loader_backdrop"></div>
             <div class="loader_dialog" role="status" aria-live="polite" aria-busy="true">
                 <div class="loader_spinner" aria-label="Yuklanmoqda"></div>
-                <p class="loader_text">Yuklanmoqda…</p>
+                <p class="loader_text">Loading...</p>
             </div>
         </div>
     </div>
@@ -1096,31 +1096,6 @@
     </script>
     <script src="./assets/js/modal.js"></script>
     <script src="./assets/js/scripts.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.show_more').on('click', function (e) {
-                e.preventDefault();
-                let $p = $('.footer_desc p');
-                let $link = $(this);
-
-                if ($p.css('max-height') === 'none') {
-                    // Yopish holati
-                    $p.css({
-                        'max-height': '35px',
-                        'overflow': 'hidden'
-                    });
-                    $link.text('Подробнее');
-                } else {
-                    // Ochish holati
-                    $p.css({
-                        'max-height': 'none',
-                        'overflow': 'visible'
-                    });
-                    $link.text('Скрыть');
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>
