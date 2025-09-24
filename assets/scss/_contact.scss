@@ -1,0 +1,85 @@
+.contact {
+    &_card {
+        border-radius: 24px;
+        // background: #D7DFE8;
+        padding: 48px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 10px;
+        position: relative;
+        overflow: hidden;
+
+        &_bg {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        h2 {
+            margin-bottom: 16px;
+        }
+
+        p {
+            margin-bottom: 24px;
+        }
+
+        &_arrow {
+            margin-bottom: 24px;
+        }
+
+        &_infos {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            li {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+            }
+
+            a {
+                color: #0F161D;
+                font-family: "Montserrat";
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 22px;
+                /* 137.5% */
+            }
+        }
+
+        &_icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 12px;
+            border-radius: 100px;
+            border: 1px solid #F0F0F3;
+            background: #FFF;
+        }
+
+        &_form_block {
+
+            input,
+            textarea {
+                width: 100%;
+                margin-bottom: 16px;
+            }
+
+            button {
+                width: 100%;
+                margin-bottom: 24px;
+            }
+        }
+    }
+}

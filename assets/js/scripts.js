@@ -19,6 +19,7 @@ $(document).ready(function () {
     },
     slidesPerView: 3,   
     spaceBetween: 16,  
+    loop: true
   });
 
   // Modal ochish
