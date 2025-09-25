@@ -1227,91 +1227,6 @@ p.error {
           align-items: center;
 }
 
-.contact_card {
-  border-radius: 24px;
-  padding: 48px;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  gap: 10px;
-  position: relative;
-  overflow: hidden;
-}
-.contact_card_bg {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-.contact_card_bg img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.contact_card h2 {
-  margin-bottom: 16px;
-}
-.contact_card p {
-  margin-bottom: 24px;
-}
-.contact_card_arrow {
-  margin-bottom: 24px;
-}
-.contact_card_infos {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 16px;
-}
-.contact_card_infos li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 16px;
-}
-.contact_card_infos a {
-  color: #0F161D;
-  font-family: "Montserrat";
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 22px;
-  /* 137.5% */
-}
-.contact_card_icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 12px;
-  border-radius: 100px;
-  border: 1px solid #F0F0F3;
-  background: #FFF;
-}
-.contact_card_form_block input,
-.contact_card_form_block textarea {
-  width: 100%;
-  margin-bottom: 16px;
-}
-.contact_card_form_block button {
-  width: 100%;
-  margin-bottom: 24px;
-}
-
 /*==================================
 ----------- TOAST GRID -----------
 ==================================*/
@@ -3120,6 +3035,91 @@ background-image: url(../images/shape-359.png);
 }
 .pipeline .module-robust-pipeline_labels {
   font-size: 16px !important;
+}
+
+.contact_card {
+  border-radius: 24px;
+  padding: 48px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.contact_card_bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.contact_card_bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.contact_card h2 {
+  margin-bottom: 16px;
+}
+.contact_card p {
+  margin-bottom: 24px;
+}
+.contact_card_arrow {
+  margin-bottom: 24px;
+}
+.contact_card_infos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+.contact_card_infos li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 16px;
+}
+.contact_card_infos a {
+  color: #0F161D;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  /* 137.5% */
+}
+.contact_card_icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px;
+  border-radius: 100px;
+  border: 1px solid #F0F0F3;
+  background: #FFF;
+}
+.contact_card_form_block input,
+.contact_card_form_block textarea {
+  width: 100%;
+  margin-bottom: 16px;
+}
+.contact_card_form_block button {
+  width: 100%;
+  margin-bottom: 24px;
 }
 
 @media (max-width: 1920px) {
