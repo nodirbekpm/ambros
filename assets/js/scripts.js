@@ -8,8 +8,16 @@ $(document).ready(function () {
       nextEl: ".team_next",
       prevEl: ".team_prev",
     },
-    slidesPerView: 3,   
+    slidesPerView: 1,   
     spaceBetween: 16,  
+    breakpoints: {
+      1200: {
+        slidesPerView: 3, 
+      },
+      992: {
+        slidesPerView: 2,   
+      }
+    }
   });
 
   var newsSwiper = new Swiper(".newsSwiper", {
@@ -17,8 +25,16 @@ $(document).ready(function () {
       nextEl: ".news_next",
       prevEl: ".news_prev",
     },
-    slidesPerView: 3,   
+    slidesPerView: 1,   
     spaceBetween: 16,  
+    breakpoints: {
+      1200: {
+        slidesPerView: 3, 
+      },
+      992: {
+        slidesPerView: 2,   
+      }
+    },
     loop: true
   });
 
