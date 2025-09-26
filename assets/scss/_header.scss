@@ -36,6 +36,9 @@
         display: flex;
         align-items: center;
         gap: 24px;
+        &.menu_item{
+            display: none;
+        }
         a{
             color: #0F161D;
             font-family: "Montserrat";

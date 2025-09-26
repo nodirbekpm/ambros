@@ -1,55 +1,186 @@
-@media (max-width:1920px){
+@media (max-width:1920px) {
     .container {
         max-width: 1104px;
         width: 100%;
         margin: 0 auto;
-      }
+    }
 }
 
 @media (max-width: 1560px) {
     .container-fluid {
         max-width: 1100px;
-      }
+    }
 }
-@media (max-width:1200px){
-    .container, .container-fluid{
+
+@media (max-width:1200px) {
+
+    .container,
+    .container-fluid {
         max-width: 960px;
     }
 
     // Hero
-    .hero{
-        &_bg{
+    .hero {
+        &_bg {
             bottom: 150px;
         }
     }
 
     // About
-    .about{
-        &_right{
+    .about {
+        &_right {
             width: 60%;
-            img{
+
+            img {
                 width: 100%;
             }
         }
     }
 
-    
+
 }
-@media (max-width:992px){
-    .container{
+
+@media (max-width:992px) {
+
+    .container,
+    .container-fluid {
         max-width: 720px;
     }
-   
+
+    // header
+    .header {
+        position: relative;
+
+        &_menus {
+            background-color: #fff;
+            position: fixed;
+            z-index: 200;
+            top: 0;
+            right: -100%;
+            display: flex;
+            flex-direction: column;
+            width: 55%;
+            height: 100vh;
+            padding: 56px 24px 32px 40px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 32px;
+            transition: all .3s ease;
+
+            &.active {
+                right: 0;
+            }
+        }
+
+        &_contact {
+            position: relative;
+
+            // z-index: 210;
+            // &.active{
+            //     position: fixed;
+            // }
+            &.menu_item {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+        }
+
+        &_close {
+            position: static;
+            margin: 0;
+        }
+
+        .hamburger_menu {
+            display: flex;
+        }
+
+        &_close {
+            display: flex;
+        }
+
+        &_icon {
+            display: flex;
+            padding: 12px;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100px;
+            border: 1px solid #F0F0F3;
+            background: #FFF;
+        }
+    }
+
+    //hero
+    .hero{
+        &_bg{
+            width: 170%;
+            bottom: 0;
+        }
+    }
+
+    //about
+    .about{
+        &_main{
+            flex-direction: column;
+            gap: 32px;
+        }
+        &_right{
+            width: auto;
+        }
+    }
+
+    //steps
+    .steps{
+        &_block{
+            flex-direction: column;
+        }
+    }
+
+    //mission
+    .mission{
+        &_main{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+    }
+
+    //contact
+    .contact{
+        &_card{
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            &_infos{
+                flex-direction: row;
+                gap: 120px;
+            }
+        }
+    }
+
+    //footer
+    .footer{
+        &_main{
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+        &_desc{
+            order: 3;
+        }
+    }
+
 }
-@media (max-width:768px){
-    .container{
+
+@media (max-width:768px) {
+    .container {
         max-width: 540px;
     }
 
- 
+
 }
-@media (max-width:576px){
-    .container{
+
+@media (max-width:576px) {
+    .container {
         max-width: 100%;
         padding: 0 20px;
     }

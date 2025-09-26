@@ -16,6 +16,9 @@ $(document).ready(function () {
       },
       992: {
         slidesPerView: 2,   
+      },
+      768: {
+        slidesPerView: 1.8,   
       }
     }
   });
@@ -33,6 +36,9 @@ $(document).ready(function () {
       },
       992: {
         slidesPerView: 2,   
+      },
+      768: {
+        slidesPerView: 1.8,   
       }
     },
     loop: true
@@ -60,13 +66,13 @@ $(document).ready(function () {
    * --------------------------------*/
   $(".hamburger_menu").on('click', function (e) {
     e.preventDefault();
-    $(".header_menus_wrapper").addClass("active");
+    $(".header_menus").addClass("active");
     $('body').addClass('no_scroll');
   });
 
-  $(".header_menus_block .close, .header_backdrop").on('click', function (e) {
+  $(".header_close").on('click', function (e) {
     e.preventDefault();
-    $(".header_menus_wrapper").removeClass("active");
+    $(".header_menus").removeClass("active");
     $('body').removeClass('no_scroll');
   });
 

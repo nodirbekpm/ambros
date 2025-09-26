@@ -34,9 +34,20 @@
                 <div class="container-fluid">
                     <div class="header_block">
                         <ul class="header_menus">
-                            <span class="close d-lg-none">
-                                <i class="fs-3 fa-solid fa-xmark"></i>
-                            </span>
+                            <div class="header_contact menu_item">
+                                <a href="mailto:info@ambros.com">
+                                    <span>info@ambros.com</span>
+                                </a>
+                                <ul class="header_icons">
+                                    <li><a href="#"><img src="./assets/images/linkedin.svg" alt="linkedin"></a></li>
+                                    <li><a href="#"><img src="./assets/images/facebook.svg" alt="facebook"></a></li>
+                                    <li>
+                                        <span class="header_close header_icon d-lg-none">
+                                            <img src="./assets/images/close.svg" alt="">
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
                             <li><a href="#">Science</a></li>
                             <li><a href="#">Team</a></li>
                             <li><a href="#">About us</a></li>
@@ -57,11 +68,9 @@
                                 <li><a href="#"><img src="./assets/images/facebook.svg" alt="facebook"></a></li>
                                 <li>
                                     <!-- hamburger_mobile -->
-                                    <div class="hamurger_menu d-lg-none">
-                                        <a href="#">
-                                            <img src="./images/hamburger_menu.png" alt="">
-                                        </a>
-                                    </div>
+                                    <span class="hamburger_menu active header_icon d-lg-none">
+                                        <img src="./assets/images/menu.svg" alt="">
+                                    </span>
                                 </li>
                             </ul>
                         </div>
@@ -196,116 +205,117 @@
 
                                 <div class="module_container module_container--inner">
                                     <h2>Focused Pipeline on a rare metabolic bone disease</h3>
-                                    <div class="module-robust-pipeline_item module-robust-pipeline_item--program">
-                                        <div class="module-robust-pipeline_header">
-                                            <div class="grid grid--flex grid--flex_align-middle">
-                                                <div class="grid_col grid_col--1-of-6 desktop--only">
-                                                    <div class="grid_col-inner grid_col-inner--icon">
-                                                        <p>
-                                                            <strong>Program<!--<sup>*</sup>--></strong>
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="grid_col grid_col--1-of-6 desktop--only">
-                                                    <div class="grid_col-inner">
-                                                        <p>Indication</p>
-                                                    </div>
-                                                </div>
-                                                <div class="grid_col grid_col--1-of-6 desktop--only">
-                                                    <div class="grid_col-inner background--grey">
-                                                        <!-- <p>Genotype</p> -->
-                                                        <p>US Annual Incidence</p>
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="grid_col grid_col--3-of-6 grid_col--lc-1-of-1 grid_col--md-1-of-1 grid_col--lc-1-of-1 grid_col--md-1-of-1">
-                                                    <div class="grid_col-inner">
-                                                        <div class="module-robust-pipeline_labels-wrap">
-                                                            <div
-                                                                class="module-robust-pipeline_labels grid--no-gutter grid--flex">
-                                                                <div
-                                                                    class="background--green1 grid_col grid_col--1-of-4 grid_col--sm-1-of-4">
-                                                                    Discovery
-                                                                </div>
-                                                                <!-- <div class="background--green2 dark grid_col grid_col--1-of-4 grid_col--sm-1-of-4">Candidate <br>selection</div> -->
-                                                                <div
-                                                                    class="background--green3 dark grid_col grid_col--1-of-4 grid_col--sm-1-of-4">
-                                                                    Pre-clinical</div>
-                                                                <div
-                                                                    class="background--green4 dark grid_col grid_col--1-of-4 grid_col--sm-1-of-4">
-                                                                    Phase 1/2
-                                                                </div>
-                                                                <div
-                                                                    class="background--green5 dark grid_col grid_col--1-of-4 grid_col--sm-1-of-4">
-                                                                    Pivotal
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="module-robust-pipeline_wrap" data-accordion="container">
-                                        <!-- <span class="module-robust-pipeline_category module-robust-pipeline_category--pediatric">PEDIATRIC</span> -->
-                                        <div class="module-robust-pipeline_item module-robust-pipeline_item--accordion"
-                                            data-accordion="item">
-                                            <div class="module-robust-pipeline_header tab-firsttab" tabindex="0"
-                                                id="tab11" role="button" aria-expanded="false" aria-controls="panel11"
-                                                data-accordion="toggle">
+                                        <div class="module-robust-pipeline_item module-robust-pipeline_item--program">
+                                            <div class="module-robust-pipeline_header">
                                                 <div class="grid grid--flex grid--flex_align-middle">
-                                                    <div
-                                                        class="grid_col grid_col--1-of-6 grid_col--lc-1-of-1 grid_col--md-1-of-1">
+                                                    <div class="grid_col grid_col--1-of-6 desktop--only">
                                                         <div class="grid_col-inner grid_col-inner--icon">
                                                             <p>
-                                                                <i class="q4-icon_plus"></i>
-                                                                <strong
-                                                                    class="mobile--only">Program<!--<sup>*</sup>--><br></strong>
-                                                                <strong>Neridronate</strong>
+                                                                <strong>Program<!--<sup>*</sup>--></strong>
                                                             </p>
                                                         </div>
                                                     </div>
-                                                    <div
-                                                        class="grid_col grid_col--1-of-6 grid_col--lc-1-of-1 grid_col--md-1-of-1">
+                                                    <div class="grid_col grid_col--1-of-6 desktop--only">
                                                         <div class="grid_col-inner">
-                                                            <p><span class="mobile--only">Indication:
-                                                                </span>CRSP-1</p>
+                                                            <p>Indication</p>
                                                         </div>
                                                     </div>
-                                                    <div
-                                                        class="grid_col grid_col--1-of-6 grid_col--lc-1-of-1 grid_col--md-1-of-1">
+                                                    <div class="grid_col grid_col--1-of-6 desktop--only">
                                                         <div class="grid_col-inner background--grey">
-                                                            <p><span class="mobile--only">US/EU prevalence:
-                                                                </span><em>50,000-<br>70,000<!--<sup>1-3</sup>--></em></p>
+                                                            <!-- <p>Genotype</p> -->
+                                                            <p>US Annual Incidence</p>
                                                         </div>
                                                     </div>
                                                     <div
-                                                        class="grid_col grid_col--3-of-6 grid_col--lc-1-of-1 grid_col--md-1-of-1">
+                                                        class="grid_col grid_col--3-of-6 grid_col--lc-1-of-1 grid_col--md-1-of-1 grid_col--lc-1-of-1 grid_col--md-1-of-1">
                                                         <div class="grid_col-inner">
-                                                            <div
-                                                                class="module-robust-pipeline_label grid--no-gutter grid--flex">
+                                                            <div class="module-robust-pipeline_labels-wrap">
                                                                 <div
-                                                                    class="background--green4 grid_col grid_col--1-of-4 grid_col--sm-1-of-4">
-                                                                </div>
-                                                                <!-- <div class="background--green4 grid_col grid_col--1-of-4 grid_col--sm-1-of-4"></div> -->
-                                                                <div
-                                                                    class="background--green4 grid_col grid_col--1-of-4 grid_col--sm-1-of-4">
-                                                                </div>
-                                                                <div
-                                                                    class="background--grey1 background--green4-half grid_col grid_col--1-of-4 grid_col--sm-1-of-4">
-                                                                </div>
-                                                                <div
-                                                                    class="background--grey1 grid_col grid_col--1-of-4 grid_col--sm-1-of-4">
+                                                                    class="module-robust-pipeline_labels grid--no-gutter grid--flex">
+                                                                    <div
+                                                                        class="background--green1 grid_col grid_col--1-of-4 grid_col--sm-1-of-4">
+                                                                        Discovery
+                                                                    </div>
+                                                                    <!-- <div class="background--green2 dark grid_col grid_col--1-of-4 grid_col--sm-1-of-4">Candidate <br>selection</div> -->
+                                                                    <div
+                                                                        class="background--green3 dark grid_col grid_col--1-of-4 grid_col--sm-1-of-4">
+                                                                        Pre-clinical</div>
+                                                                    <div
+                                                                        class="background--green4 dark grid_col grid_col--1-of-4 grid_col--sm-1-of-4">
+                                                                        Phase 1/2
+                                                                    </div>
+                                                                    <div
+                                                                        class="background--green5 dark grid_col grid_col--1-of-4 grid_col--sm-1-of-4">
+                                                                        Pivotal
+                                                                    </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
+                                        </div>
+                                        <div class="module-robust-pipeline_wrap" data-accordion="container">
+                                            <!-- <span class="module-robust-pipeline_category module-robust-pipeline_category--pediatric">PEDIATRIC</span> -->
+                                            <div class="module-robust-pipeline_item module-robust-pipeline_item--accordion"
+                                                data-accordion="item">
+                                                <div class="module-robust-pipeline_header tab-firsttab" tabindex="0"
+                                                    id="tab11" role="button" aria-expanded="false"
+                                                    aria-controls="panel11" data-accordion="toggle">
+                                                    <div class="grid grid--flex grid--flex_align-middle">
+                                                        <div
+                                                            class="grid_col grid_col--1-of-6 grid_col--lc-1-of-1 grid_col--md-1-of-1">
+                                                            <div class="grid_col-inner grid_col-inner--icon">
+                                                                <p>
+                                                                    <i class="q4-icon_plus"></i>
+                                                                    <strong
+                                                                        class="mobile--only">Program<!--<sup>*</sup>--><br></strong>
+                                                                    <strong>Neridronate</strong>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="grid_col grid_col--1-of-6 grid_col--lc-1-of-1 grid_col--md-1-of-1">
+                                                            <div class="grid_col-inner">
+                                                                <p><span class="mobile--only">Indication:
+                                                                    </span>CRSP-1</p>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="grid_col grid_col--1-of-6 grid_col--lc-1-of-1 grid_col--md-1-of-1">
+                                                            <div class="grid_col-inner background--grey">
+                                                                <p><span class="mobile--only">US/EU prevalence:
+                                                                    </span><em>50,000-<br>70,000<!--<sup>1-3</sup>--></em>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        <div
+                                                            class="grid_col grid_col--3-of-6 grid_col--lc-1-of-1 grid_col--md-1-of-1">
+                                                            <div class="grid_col-inner">
+                                                                <div
+                                                                    class="module-robust-pipeline_label grid--no-gutter grid--flex">
+                                                                    <div
+                                                                        class="background--green4 grid_col grid_col--1-of-4 grid_col--sm-1-of-4">
+                                                                    </div>
+                                                                    <!-- <div class="background--green4 grid_col grid_col--1-of-4 grid_col--sm-1-of-4"></div> -->
+                                                                    <div
+                                                                        class="background--green4 grid_col grid_col--1-of-4 grid_col--sm-1-of-4">
+                                                                    </div>
+                                                                    <div
+                                                                        class="background--grey1 background--green4-half grid_col grid_col--1-of-4 grid_col--sm-1-of-4">
+                                                                    </div>
+                                                                    <div
+                                                                        class="background--grey1 grid_col grid_col--1-of-4 grid_col--sm-1-of-4">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
 
                                         </div>
-
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1140,7 +1150,7 @@
             </div>
         </div>
 
-        
+
         <!-- footer -->
         <footer id="footer" class="footer">
             <div class="container">
