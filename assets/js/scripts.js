@@ -19,6 +19,9 @@ $(document).ready(function () {
       },
       768: {
         slidesPerView: 1.8,   
+      },
+      380: {
+        slidesPerView: 1.2,
       }
     }
   });
@@ -39,6 +42,9 @@ $(document).ready(function () {
       },
       768: {
         slidesPerView: 1.8,   
+      },
+            380: {
+        slidesPerView: 1.2,
       }
     },
     loop: true

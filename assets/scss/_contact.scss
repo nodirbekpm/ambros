@@ -9,6 +9,10 @@
         position: relative;
         overflow: hidden;
 
+        &_bg_mobile{
+            display: none;
+        }
+
         &_bg {
             width: 100%;
             height: 100%;
