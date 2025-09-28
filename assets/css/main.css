@@ -192,6 +192,9 @@ body {
   background: #F0F0F3;
   color: #0F161D;
 }
+body.has-fixed-header {
+  padding-top: var(--header-height, 0px);
+}
 body.no_scroll {
   overflow: hidden;
   height: 100vh;
@@ -260,7 +263,7 @@ body.no_scroll {
 
 .wrapper {
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .container {
@@ -348,6 +351,7 @@ p {
 .btn:hover {
   background-position: right center;
   color: #fff;
+  border: none;
 }
 
 .input_block {
@@ -855,7 +859,19 @@ body {
 }
 
 .header {
+  background: #EAFAFF;
+  z-index: 1000;
+  transition: box-shadow 0.2s ease;
   padding-top: 40px;
+}
+.header.is-sticky {
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.15);
+}
+.header.use-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .header .hamburger_menu {
   display: none;
@@ -1042,6 +1058,9 @@ body {
   gap: 16px;
 }
 
+.team {
+  display: none;
+}
 .team_block {
   display: flex;
   flex-direction: column;

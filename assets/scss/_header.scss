@@ -1,20 +1,38 @@
-.header{
+.header {
+    background: #EAFAFF;
+    z-index: 1000;
+    transition: box-shadow .2s ease;
+
+    &.is-sticky {
+        box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .15);
+    }
+
+    &.use-fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
     padding-top: 40px;
-    .hamburger_menu{
+
+    .hamburger_menu {
         display: none;
     }
 
-    &_block{
+    &_block {
         display: flex;
         justify-content: space-between;
         align-items: center;
 
     }
-    &_menus{
+
+    &_menus {
         display: flex;
         align-items: center;
         gap: 24px;
-        a{
+
+        a {
             color: #0F161D;
             font-family: "Montserrat";
             font-size: 16px;
@@ -22,24 +40,29 @@
             font-weight: 400;
             line-height: normal;
             transition: all .3s ease;
-            &:hover{
+
+            &:hover {
                 opacity: .7;
             }
         }
     }
-    &_logo{
-        img{
+
+    &_logo {
+        img {
             width: 260px;
         }
     }
-    &_contact{
+
+    &_contact {
         display: flex;
         align-items: center;
         gap: 24px;
-        &.menu_item{
+
+        &.menu_item {
             display: none;
         }
-        a{
+
+        a {
             color: #0F161D;
             font-family: "Montserrat";
             font-size: 16px;
@@ -47,12 +70,14 @@
             font-weight: 400;
             line-height: normal;
             transition: all .3s ease;
-            &:hover{
+
+            &:hover {
                 opacity: .7;
             }
         }
     }
-    &_icons{
+
+    &_icons {
         display: flex;
         align-items: center;
         gap: 8px;

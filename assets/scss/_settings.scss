@@ -199,6 +199,10 @@ body {
   color: #0F161D;
   // scroll-behavior: smooth;
 
+  &.has-fixed-header {
+    padding-top: var(--header-height, 0px);
+  }
+
   &.no_scroll {
     overflow: hidden;
     height: 100vh;
@@ -269,7 +273,7 @@ body {
 
 .wrapper {
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .container {
@@ -360,6 +364,7 @@ p {
 .btn:hover {
   background-position: right center;
   color: #fff;
+  border: none;
 }
 
 
