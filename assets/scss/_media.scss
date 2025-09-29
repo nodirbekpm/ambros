@@ -51,6 +51,20 @@
     .header {
         position: relative;
 
+        &.is-sticky {
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .15);
+
+            .header_menus {
+                position: fixed;
+                top: 0;
+                transition: all .5s ease;
+            }
+        }
+
+        &_block {
+            align-items: flex-start;
+        }
+
         &_menus {
             background-color: #fff;
             position: fixed;
@@ -92,7 +106,10 @@
         }
 
         .hamburger_menu {
+            position: relative;
+            top: 10px;
             display: flex;
+            transition: all .5s ease;
         }
 
         &_close {
@@ -287,39 +304,40 @@
 
 
     // about
-    .about{
-        &_card{
+    .about {
+        &_card {
             padding: 24px;
         }
     }
 
     // step
-    .step{
+    .step {
         padding: 24px;
     }
 
     // pipeline
-        .module-robust-pipeline_labels > div.grid_col {
-            font-size: 12px;
-        }
+    .module-robust-pipeline_labels>div.grid_col {
+        font-size: 12px;
+    }
 
     // team
-    .team{
-        &_buttons{
+    .team {
+        &_buttons {
             display: none;
         }
 
-        .container{
+        .container {
             padding: 0 0 0 20px;
         }
     }
 
     // contact
-    .contact{
-        .container{
+    .contact {
+        .container {
             padding: 0 10px;
         }
-        &_card{
+
+        &_card {
             padding: 24px;
         }
     }

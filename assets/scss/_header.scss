@@ -1,10 +1,19 @@
 .header {
     background: #EAFAFF;
     z-index: 1000;
-    transition: box-shadow .2s ease;
+    transition: box-shadow .3s ease;
 
     &.is-sticky {
         box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .15);
+        .header_block{
+            align-items: flex-start;
+            transition: all .5s ease;
+        }
+        .header_menus{
+            position: relative;
+            top: 10px;
+            transition: all .5s ease;
+        }
     }
 
     &.use-fixed {
@@ -24,13 +33,14 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+        transition: all .5s ease;
     }
 
     &_menus {
         display: flex;
         align-items: center;
         gap: 24px;
+        transition: all .5s ease;
 
         a {
             color: #0F161D;
