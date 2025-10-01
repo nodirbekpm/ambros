@@ -91,7 +91,7 @@
                     </div>
                     <!-- <h1>Ambros Therapeutics</h1> -->
                     <h3>Seeking a cure for patients suffering from CRPS-1</h3>
-                    <a href="#contact" class="btn">Contact us</a>
+                    <!-- <a href="#contact" class="btn">Contact us</a> -->
                 </div>
                 <div class="hero_bg">
                     <video src="./assets/video/bg.webm" autoplay muted loop playsinline preload="auto"></video>
@@ -1247,26 +1247,34 @@
             setTimeout(hideLoader, 8000);
         })();
     </script>
-    <script>
-        const header = document.getElementById('header');
-        const main = document.querySelector('main');
 
-        function setMainOffset() {
-            const h = header.offsetHeight;
-            main.style.paddingTop = h + 'px';
-        }
 
-        function onScroll() {
-            if (window.scrollY > 1) header.classList.add('is-sticky');
-            else header.classList.remove('is-sticky');
-        }
+<script>
+  (function () {
+    const header = document.getElementById('header');
+    if (!header) return;
 
-        // init
-        setMainOffset();
-        onScroll();
-        window.addEventListener('resize', setMainOffset);
-        window.addEventListener('scroll', onScroll, { passive: true });
-    </script>
+    function getScrollY() {
+      // Brauzerlar orasida moslashuvchan scroll olish
+      return window.pageYOffset
+        ?? document.documentElement.scrollTop
+        ?? document.body.scrollTop
+        ?? 0;
+    }
+
+    function onScroll() {
+      header.classList.toggle('is-sticky', getScrollY() > 1);
+    }
+
+    // Dastlabki holat va listner
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', onScroll, { once: true });
+    } else {
+      onScroll();
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+  })();
+</script>
 
 
     <script src="./assets/js/modal.js"></script>

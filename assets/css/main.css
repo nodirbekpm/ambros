@@ -187,10 +187,18 @@ html::-webkit-scrollbar-thumb {
   box-sizing: border-box;
 }
 
+html, body {
+  margin: 0;
+  overscroll-behavior-y: none; /* Chrome/Firefox */
+}
+
 body {
   font-family: "Montserrat";
   background: #F0F0F3;
   color: #0F161D;
+  margin: 0;
+  padding: 0;
+  overscroll-behavior-y: none;
 }
 body.no_scroll {
   overflow-x: hidden;
@@ -260,7 +268,7 @@ body.no_scroll {
 
 .wrapper {
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .container {
@@ -813,8 +821,8 @@ body {
 /* (Qolgan kodingiz o'zgarishsiz qoladi) */
 .hero {
   position: relative;
-  top: 122px;
   background: linear-gradient(180deg, #EAFAFF 0%, rgba(231, 230, 237, 0) 100%);
+  padding-right: 122px;
 }
 .hero_block {
   position: relative;
@@ -827,12 +835,12 @@ body {
   margin-bottom: 16px;
 }
 .hero_block .header_logo img {
-  width: 320px;
+  width: 500px;
 }
 .hero_bg {
   width: 100%;
   position: absolute;
-  top: 0;
+  top: 122px;
   z-index: -1;
   left: 0;
   overflow: hidden;
@@ -863,16 +871,16 @@ body {
 }
 
 .header {
-  background: #EAFAFF;
   z-index: 1000;
   transition: box-shadow 0.3s ease;
   position: fixed;
   inset: 0 0 auto 0;
   z-index: 1000;
-  transition: box-shadow 0.3s ease;
+  transition: all 0.3s ease;
   padding: 20px 0;
 }
 .header.is-sticky {
+  background-color: #EAFAFF;
   box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.15);
 }
 .header .hamburger_menu {

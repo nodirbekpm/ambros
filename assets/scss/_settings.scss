@@ -192,12 +192,20 @@ html {
 // html {
 //   scroll-behavior: smooth;
 // }
+html, body {
+  margin: 0;
+  overscroll-behavior-y: none;  /* Chrome/Firefox */
+}
 
 body {
   font-family: "Montserrat";
   background: #F0F0F3;
+  // background: #EAFAFF;
   color: #0F161D;
   // scroll-behavior: smooth;
+    margin: 0;             
+  padding: 0;
+  overscroll-behavior-y: none; 
 
 
   &.no_scroll {
@@ -270,7 +278,7 @@ body {
 
 .wrapper {
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .container {

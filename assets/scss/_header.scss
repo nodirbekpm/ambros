@@ -1,13 +1,14 @@
 .header {
-    background: #EAFAFF;
     z-index: 1000;
     transition: box-shadow .3s ease;
     position: fixed;
     inset: 0 0 auto 0;
     z-index: 1000;
-    transition: box-shadow .3s ease;
+    transition: all .3s ease;
 
     &.is-sticky {
+        background-color: #EAFAFF;
+
         box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .15);
 
     }

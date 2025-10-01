@@ -29,42 +29,41 @@
     <div class="wrapper">
 
         <!-- header -->
-        <div class="hero">
-            <header class="header" id="header">
-                <div class="container-fluid">
-                    <div class="header_block">
-                        <div class="header_logo">
-                            <a href="#" class="logo">
-                                <img src="./assets/images/logo.svg" alt="">
+        <header class="header" id="header">
+            <div class="container-fluid">
+                <div class="header_block">
+                    <div class="header_logo">
+                        <a href="#" class="logo">
+                            <img src="./assets/images/logo.svg" alt="">
+                        </a>
+                    </div>
+
+                    <ul class="header_menus">
+                        <div class="header_contact menu_item">
+                            <a href="mailto:info@ambros.com">
+                                <span>info@ambros.com</span>
                             </a>
+                            <ul class="header_icons">
+                                <li><a href="#"><img src="./assets/images/linkedin.svg" alt="linkedin"></a></li>
+                                <li><a href="#"><img src="./assets/images/facebook.svg" alt="facebook"></a></li>
+                                <li>
+                                    <span class="header_close header_icon d-lg-none">
+                                        <img src="./assets/images/close.svg" alt="">
+                                    </span>
+                                </li>
+                            </ul>
                         </div>
+                        <li><a href="#">Science</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
 
-                        <ul class="header_menus">
-                            <div class="header_contact menu_item">
-                                <a href="mailto:info@ambros.com">
-                                    <span>info@ambros.com</span>
-                                </a>
-                                <ul class="header_icons">
-                                    <li><a href="#"><img src="./assets/images/linkedin.svg" alt="linkedin"></a></li>
-                                    <li><a href="#"><img src="./assets/images/facebook.svg" alt="facebook"></a></li>
-                                    <li>
-                                        <span class="header_close header_icon d-lg-none">
-                                            <img src="./assets/images/close.svg" alt="">
-                                        </span>
-                                    </li>
-                                </ul>
-                            </div>
-                            <li><a href="#">Science</a></li>
-                            <li><a href="#">Team</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
+                    <span class="hamburger_menu active header_icon d-lg-none">
+                        <img src="./assets/images/menu.svg" alt="">
+                    </span>
 
-                        <span class="hamburger_menu active header_icon d-lg-none">
-                            <img src="./assets/images/menu.svg" alt="">
-                        </span>
-
-                        <!-- <div class="header_contact">
+                    <!-- <div class="header_contact">
                             <a class="header_email" href="mailto:info@ambros.com">
                                 <span>info@ambros.com</span>
                             </a>
@@ -78,19 +77,21 @@
                                 </li>
                             </ul>
                         </div> -->
-                    </div>
                 </div>
-            </header>
-        </div>
+            </div>
+        </header>
 
-        <style>
+                <style>
             h2,
             h3,
             p {
                 margin-bottom: 20px;
             }
+            .main{
+                padding-top: 122px;
+            }
         </style>
-        <div class="container mt-5">
+        <div class="container main mt-5">
 
             <p class="has-text-align-center"><strong>Ambros Therapeutics, Inc.</strong></p>
 
@@ -535,6 +536,29 @@
                     href="mailto:privacy@ambrostx.com">privacy@ambrostx.com</a></p>
         </div>
 
+        <!-- ==== TRIGGER ==== -->
+        <!-- <button class="btn_open_modal" data_modal_target="#success_modal">Open modal</button> -->
+
+        <!-- ==== MODAL ==== -->
+        <div id="success_modal" class="modal_container" role="dialog" aria-modal="true" aria-hidden="true">
+            <div class="modal_backdrop"></div>
+
+            <div class="modal_dialog" role="document" aria-labelledby="demo_modal_title">
+                <button type="button" class="close" aria-label="Close" title="Close">
+                    <img src="./assets/images/close.svg" alt="close">
+                </button>
+
+
+                <div class="modal_body">
+                    <div class="modal_message success">
+                        <img src="./assets/images/check.svg" alt="success">
+                    </div>
+                    <div class="modal_title">Thank you for your request!</div>
+                    <p class="modal_text">We will contact you shortly</p>
+                </div>
+            </div>
+        </div>
+
 
         <!-- footer -->
         <footer id="footer" class="footer">
@@ -546,6 +570,9 @@
                         </p>
                     </div>
                     <ul class="footer_menus">
+                        <li>
+                            <a href="./privacy-policy.html">Privacy Policy</a>
+                        </li>
                         <li>
                             <a href="#">Science</a>
                         </li>
@@ -617,6 +644,36 @@
             setTimeout(hideLoader, 8000);
         })();
     </script>
+
+
+<script>
+  (function () {
+    const header = document.getElementById('header');
+    if (!header) return;
+
+    function getScrollY() {
+      // Brauzerlar orasida moslashuvchan scroll olish
+      return window.pageYOffset
+        ?? document.documentElement.scrollTop
+        ?? document.body.scrollTop
+        ?? 0;
+    }
+
+    function onScroll() {
+      header.classList.toggle('is-sticky', getScrollY() > 1);
+    }
+
+    // Dastlabki holat va listner
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', onScroll, { once: true });
+    } else {
+      onScroll();
+    }
+    window.addEventListener('scroll', onScroll, { passive: true });
+  })();
+</script>
+
+
     <script src="./assets/js/modal.js"></script>
     <script src="./assets/js/scripts.js"></script>
 </body>
