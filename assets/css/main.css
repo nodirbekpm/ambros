@@ -1023,6 +1023,7 @@ body {
   gap: 48px;
 }
 .step_number {
+  display: none;
   font-family: "Montserrat";
   font-size: 64px;
   font-style: normal;

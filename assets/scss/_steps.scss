@@ -16,6 +16,7 @@
     flex-direction: column;
     gap: 48px;
     &_number{
+        display: none;
         font-family: "Montserrat";
         font-size: 64px;
         font-style: normal;
