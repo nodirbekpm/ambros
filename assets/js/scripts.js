@@ -133,32 +133,7 @@ $(".header_menus li a").on('click', function (e) {
   /* ================================
  *  STICKY HEADER
  * ================================ */
-(function($){
-  var $header = $('.header');
-  if(!$header.length) return;
 
-  // Shadow toggle
-  function shadow(){
-    if ((window.scrollY||0) > 0) $header.addClass('is-sticky');
-    else $header.removeClass('is-sticky');
-  }
-  shadow();
-  $(window).on('scroll', shadow);
-
-  // Sticky qo'llanmasa yoki ota konteynerlar to'sqinlik qilsa -> fixed
-  function supportsSticky(){
-    var t = document.createElement('div');
-    t.style.cssText = 'position:sticky;position:-webkit-sticky;top:0;';
-    return /(sticky)/.test(getComputedStyle(t).position);
-  }
-  var needFixed = !supportsSticky();
-  if (needFixed){
-    $header.addClass('use-fixed');
-    document.body.classList.add('has-fixed-header');
-    function setPad(){ document.body.style.setProperty('--header-height', $header.outerHeight()+'px'); }
-    setPad(); $(window).on('resize', setPad);
-  }
-})(jQuery);
 
 
 });

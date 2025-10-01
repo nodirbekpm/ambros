@@ -192,11 +192,8 @@ body {
   background: #F0F0F3;
   color: #0F161D;
 }
-body.has-fixed-header {
-  padding-top: var(--header-height, 0px);
-}
 body.no_scroll {
-  overflow: hidden;
+  overflow-x: hidden;
   height: 100vh;
 }
 
@@ -816,6 +813,7 @@ body {
 /* (Qolgan kodingiz o'zgarishsiz qoladi) */
 .hero {
   position: relative;
+  top: 122px;
   background: linear-gradient(180deg, #EAFAFF 0%, rgba(231, 230, 237, 0) 100%);
 }
 .hero_block {
@@ -868,25 +866,14 @@ body {
   background: #EAFAFF;
   z-index: 1000;
   transition: box-shadow 0.3s ease;
-  padding-top: 40px;
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 1000;
+  transition: box-shadow 0.3s ease;
+  padding: 20px 0;
 }
 .header.is-sticky {
   box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.15);
-}
-.header.is-sticky .header_block {
-  align-items: flex-start;
-  transition: all 0.5s ease;
-}
-.header.is-sticky .header_menus {
-  position: relative;
-  top: 10px;
-  transition: all 0.5s ease;
-}
-.header.use-fixed {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 .header .hamburger_menu {
   display: none;

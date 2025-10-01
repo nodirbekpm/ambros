@@ -2,28 +2,18 @@
     background: #EAFAFF;
     z-index: 1000;
     transition: box-shadow .3s ease;
+    position: fixed;
+    inset: 0 0 auto 0;
+    z-index: 1000;
+    transition: box-shadow .3s ease;
 
     &.is-sticky {
         box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .15);
-        .header_block{
-            align-items: flex-start;
-            transition: all .5s ease;
-        }
-        .header_menus{
-            position: relative;
-            top: 10px;
-            transition: all .5s ease;
-        }
+
     }
 
-    &.use-fixed {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-    }
 
-    padding-top: 40px;
+    padding: 20px 0;
 
     .hamburger_menu {
         display: none;
