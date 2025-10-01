@@ -33,7 +33,7 @@
         gap: 24px;
         transition: all .5s ease;
 
-        a {
+        a, span {
             color: #0F161D;
             font-family: "Montserrat";
             font-size: 16px;
@@ -41,6 +41,7 @@
             font-weight: 400;
             line-height: normal;
             transition: all .3s ease;
+            cursor: pointer;
 
             &:hover {
                 opacity: .7;
