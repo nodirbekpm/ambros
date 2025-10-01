@@ -248,6 +248,15 @@
         }
     }
 
+    //hero
+    .hero {
+        &_block {
+            h3 {
+                width: 100%;
+            }
+        }
+    }
+
     // steps
     .steps {
         &_block {

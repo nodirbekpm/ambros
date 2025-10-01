@@ -836,6 +836,10 @@ body {
 .hero_block .header_logo img {
   width: 500px;
 }
+.hero_block h3 {
+  width: 60%;
+  margin: 0 auto;
+}
 .hero_bg {
   width: 100%;
   position: absolute;
@@ -979,6 +983,9 @@ body {
 
 #about {
   margin-top: 50px;
+}
+#about .mission_main {
+  grid-template-columns: 30% 60%;
 }
 
 .about_main {
@@ -3064,6 +3071,9 @@ background-image: url(../images/shape-359.png);
   }
   .header_logo img {
     width: 208px;
+  }
+  .hero_block h3 {
+    width: 100%;
   }
   .steps_block {
     display: flex;
