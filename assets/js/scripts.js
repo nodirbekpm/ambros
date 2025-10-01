@@ -131,9 +131,12 @@ $(".header_menus li a").on('click', function (e) {
   });
 
   /* ================================
- *  STICKY HEADER
+ *  PIPELINE
  * ================================ */
-
+ $(".grid--flex_align-middle").on("click", function(e) {
+    e.preventDefault();
+    $(".pipeline_icon").toggleClass("fa-plus fa-minus");
+});
 
 
 });

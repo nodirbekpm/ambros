@@ -1765,16 +1765,17 @@
     
 
 
-
-
-
-
-
 .pipeline{
     h2{
         margin-bottom: 24px;
     }
     .module-robust-pipeline_labels{
         font-size: 16px !important;
+    }
+    i{
+        color: #0F161D !important;
+    }
+    .grid--flex_align-middle{
+        cursor: pointer;
     }
 }

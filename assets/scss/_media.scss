@@ -49,7 +49,6 @@
 
     // header
     .header {
-        position: relative;
 
         &.is-sticky {
             box-shadow: 0 10px 30px -10px rgba(0, 0, 0, .15);
@@ -133,6 +132,14 @@
             width: 170%;
             bottom: 0;
         }
+
+        &_block {
+            .header_logo {
+                img {
+                    width: 260px;
+                }
+            }
+        }
     }
 
     //about
@@ -150,7 +157,7 @@
     //steps
     .steps {
         &_block {
-            flex-direction: column;
+            grid-template-columns: auto auto;
         }
     }
 
@@ -242,6 +249,13 @@
     }
 
     // steps
+    .steps {
+        &_block {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
     .step {
         gap: 24px;
 

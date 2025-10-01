@@ -822,7 +822,6 @@ body {
 .hero {
   position: relative;
   background: linear-gradient(180deg, #EAFAFF 0%, rgba(231, 230, 237, 0) 100%);
-  padding-right: 122px;
 }
 .hero_block {
   position: relative;
@@ -977,6 +976,10 @@ body {
   gap: 8px;
 }
 
+#about {
+  margin-top: 50px;
+}
+
 .about_main {
   display: flex;
   align-items: center;
@@ -1003,8 +1006,9 @@ body {
 }
 
 .steps_block {
-  display: flex;
-  gap: 16px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 24px 16px;
   align-items: stretch;
 }
 
@@ -1028,6 +1032,18 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 16px;
+}
+.step_img {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.step_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .step_body {
   display: flex;
@@ -1041,6 +1057,8 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: 22px; /* 122.222% */
+  margin: 0;
+  text-align: left;
 }
 .step_text {
   color: #0F161D;
@@ -1049,6 +1067,17 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 22px; /* 137.5% */
+}
+
+.crps_rise h2 {
+  margin-bottom: 32px;
+}
+.crps_rise .img_box {
+  width: 100%;
+}
+.crps_rise .img_box img {
+  width: 100%;
+  object-fit: cover;
 }
 
 .mission .badge {
@@ -2789,6 +2818,12 @@ background-image: url(../images/shape-359.png);
 .pipeline .module-robust-pipeline_labels {
   font-size: 16px !important;
 }
+.pipeline i {
+  color: #0F161D !important;
+}
+.pipeline .grid--flex_align-middle {
+  cursor: pointer;
+}
 
 .contact_card {
   border-radius: 24px;
@@ -2894,9 +2929,6 @@ background-image: url(../images/shape-359.png);
   .container-fluid {
     max-width: 720px;
   }
-  .header {
-    position: relative;
-  }
   .header.is-sticky {
     box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.15);
   }
@@ -2961,6 +2993,9 @@ background-image: url(../images/shape-359.png);
     width: 170%;
     bottom: 0;
   }
+  .hero_block .header_logo img {
+    width: 260px;
+  }
   .about_main {
     flex-direction: column;
     gap: 32px;
@@ -2969,7 +3004,7 @@ background-image: url(../images/shape-359.png);
     width: auto;
   }
   .steps_block {
-    flex-direction: column;
+    grid-template-columns: auto auto;
   }
   .mission_main {
     display: flex;
@@ -3024,6 +3059,10 @@ background-image: url(../images/shape-359.png);
   }
   .header_logo img {
     width: 208px;
+  }
+  .steps_block {
+    display: flex;
+    flex-direction: column;
   }
   .step {
     gap: 24px;
