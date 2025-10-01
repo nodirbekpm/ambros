@@ -2826,6 +2826,9 @@ background-image: url(../images/shape-359.png);
   cursor: pointer;
 }
 
+.contact {
+  display: none;
+}
 .contact_card {
   border-radius: 24px;
   padding: 48px;
