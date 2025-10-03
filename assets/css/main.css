@@ -187,9 +187,11 @@ html::-webkit-scrollbar-thumb {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
-  overscroll-behavior-y: none; /* Chrome/Firefox */
+  overscroll-behavior-y: none;
+  /* Chrome/Firefox */
 }
 
 body {
@@ -266,6 +268,11 @@ body.no_scroll {
   margin: 0;
 }
 
+main {
+  position: relative;
+  padding-top: 122px;
+}
+
 .wrapper {
   position: relative;
   overflow: hidden;
@@ -306,10 +313,10 @@ h1 {
 h2 {
   color: #0F161D;
   font-family: "Montserrat";
-  font-size: 48px;
+  font-size: 25px;
   font-style: normal;
   font-weight: 500;
-  line-height: 54px;
+  line-height: 35px;
   /* 112.5% */
   letter-spacing: -1.92px;
 }
@@ -821,6 +828,7 @@ body {
 /* (Qolgan kodingiz o'zgarishsiz qoladi) */
 .hero {
   position: relative;
+  height: calc(100% + 122px);
   background: linear-gradient(180deg, #EAFAFF 0%, rgba(231, 230, 237, 0) 100%);
 }
 .hero_block {
@@ -1019,6 +1027,9 @@ body {
   gap: 24px 16px;
   align-items: stretch;
 }
+.steps_block.science_steps_block {
+  grid-template-columns: auto auto;
+}
 
 .step {
   border-radius: 24px;
@@ -1108,9 +1119,6 @@ body {
   gap: 16px;
 }
 
-.team {
-  display: none;
-}
 .team_block {
   display: flex;
   flex-direction: column;
@@ -2834,9 +2842,6 @@ background-image: url(../images/shape-359.png);
   cursor: pointer;
 }
 
-.contact {
-  display: none;
-}
 .contact_card {
   border-radius: 24px;
   padding: 48px;
@@ -2926,9 +2931,6 @@ background-image: url(../images/shape-359.png);
   .container-fluid {
     max-width: 960px;
   }
-  .hero_bg {
-    bottom: 150px;
-  }
   .about_right {
     width: 60%;
   }
@@ -3003,7 +3005,6 @@ background-image: url(../images/shape-359.png);
   }
   .hero_bg {
     width: 170%;
-    bottom: 0;
   }
   .hero_block .header_logo img {
     width: 260px;
@@ -3116,9 +3117,6 @@ background-image: url(../images/shape-359.png);
   }
   .hero_block {
     padding: 132px 0 70px;
-  }
-  .hero_bg {
-    bottom: -50px;
   }
   .about_card {
     padding: 24px;

@@ -21,9 +21,9 @@
 
     // Hero
     .hero {
-        &_bg {
-            bottom: 150px;
-        }
+        // &_bg {
+        //     bottom: 150px;
+        // }
     }
 
     // About
@@ -130,7 +130,7 @@
     .hero {
         &_bg {
             width: 170%;
-            bottom: 0;
+            // bottom: 0;
         }
 
         &_block {
@@ -320,9 +320,9 @@
             padding: 132px 0 70px;
         }
 
-        &_bg {
-            bottom: -50px;
-        }
+        // &_bg {
+        //     bottom: -50px;
+        // }
     }
 
 

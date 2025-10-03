@@ -1,5 +1,6 @@
 .hero{
     position: relative;
+    height: calc(100% + 122px);
     background: linear-gradient(180deg, #EAFAFF 0%, rgba(231, 230, 237, 0.00) 100%);
     &_block{
         position: relative;

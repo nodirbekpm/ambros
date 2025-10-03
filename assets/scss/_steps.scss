@@ -4,6 +4,9 @@
         grid-template-columns: auto auto auto;
         gap: 24px 16px;
         align-items: stretch;
+        &.science_steps_block{
+            grid-template-columns: auto auto;
+        }
     }
 }
 .step{
