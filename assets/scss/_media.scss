@@ -28,6 +28,21 @@
 
     // About
     .about {
+         &_neridronate {
+        .about_main {
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        .about_right {
+            img {
+            border-radius: 20px;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
         &_right {
             width: 60%;
 

@@ -270,7 +270,7 @@ body.no_scroll {
 
 main {
   position: relative;
-  padding-top: 122px;
+  padding-top: 180px;
 }
 
 .wrapper {
@@ -996,11 +996,25 @@ body {
   grid-template-columns: 30% 60%;
 }
 
+.crps_rise h2 {
+  text-align: center;
+}
+
 .about_main {
   display: flex;
   align-items: center;
   justify-content: space-between;
   align-self: stretch;
+}
+.about_neridronate .about_main {
+  display: grid;
+  grid-template-columns: calc(50% - 25px) calc(50% - 25px);
+  gap: 50px;
+}
+.about_neridronate .about_right img {
+  border-radius: 20px;
+  width: 100%;
+  object-fit: cover;
 }
 .about_card {
   padding: 48px;
@@ -1105,7 +1119,7 @@ body {
 }
 .mission_main {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 30% 60%;
   gap: 16px;
 }
 .mission_right {
@@ -2597,7 +2611,7 @@ background-image: url(../images/shape-359.png);
 .module-robust-pipeline_label > div.background--green4-half:before {
   content: "";
   background: #0d212c;
-  width: 50%;
+  width: 31%;
   left: 0;
   top: 0;
   height: 100%;
@@ -2831,6 +2845,7 @@ background-image: url(../images/shape-359.png);
 /*Pipeline Page: END*/
 .pipeline h2 {
   margin-bottom: 24px;
+  text-align: center;
 }
 .pipeline .module-robust-pipeline_labels {
   font-size: 16px !important;
@@ -2930,6 +2945,16 @@ background-image: url(../images/shape-359.png);
   .container,
   .container-fluid {
     max-width: 960px;
+  }
+  .about_neridronate .about_main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .about_neridronate .about_right img {
+    border-radius: 20px;
+    width: 100%;
+    object-fit: cover;
   }
   .about_right {
     width: 60%;
